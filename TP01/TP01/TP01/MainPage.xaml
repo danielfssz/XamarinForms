@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TP01"
+             x:Class="TP01.MainPage">
+
+    <!--<StackLayout>
+        --><!-- Place new controls here --><!--
+        <Label 
+           Text="Aplicação Teste!"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="Center"
+           TextColor="Black"
+        />
+
+        <StackLayout Orientation="Horizontal">
+            <Label 
+                Text="ID:"
+                VerticalOptions="FillAndExpand"
+                TextColor="Black"
+            />
+            <Entry 
+                VerticalOptions="EndAndExpand"
+            />
+        </StackLayout>
+        
+        
+        <Entry />
+
+    </StackLayout>-->
+    <StackLayout Orientation="Vertical" Padding="20">
+        <Label HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="Aplicação Teste!" />
+
+        <StackLayout Orientation="Horizontal">
+            <Label 
+                VerticalOptions="Center"
+                Text="ID:" 
+            />
+            <Entry 
+                x:Name="Id"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+            />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label 
+                VerticalOptions="Center"
+                Text="Pass:" 
+            />
+            <Entry 
+                x:Name="Password"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                IsPassword="True"
+            />
+        </StackLayout>
+        
+        <Button 
+            Text="Ok"
+            Clicked="OnClickOk"
+        />
+        <Button 
+            Text="Limpar"
+            Clicked="OnClickLimpar"
+        />
+        <Button 
+            Text="Creditos"
+            Clicked="OnClickCreditos"
+        />
+        
+    </StackLayout>
+
+
+
+
+</ContentPage>
