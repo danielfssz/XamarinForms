@@ -2,32 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TP01"
-             x:Class="TP01.MainPage">
-
-    <!--<StackLayout>
-        --><!-- Place new controls here --><!--
-        <Label 
-           Text="Aplicação Teste!"
-           VerticalOptions="CenterAndExpand"
-           HorizontalOptions="Center"
-           TextColor="Black"
-        />
-
-        <StackLayout Orientation="Horizontal">
-            <Label 
-                Text="ID:"
-                VerticalOptions="FillAndExpand"
-                TextColor="Black"
-            />
-            <Entry 
-                VerticalOptions="EndAndExpand"
-            />
-        </StackLayout>
-        
-        
-        <Entry />
-
-    </StackLayout>-->
+             x:Class="TP01.MainPage">    
     <StackLayout Orientation="Vertical" Padding="20">
         <Label HorizontalOptions="Center"
                VerticalOptions="Center"
