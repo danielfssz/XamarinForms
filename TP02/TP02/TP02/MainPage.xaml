@@ -1,14 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:TP02"
-             x:Class="TP02.MainPage">
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TP02" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TP02.MainPage">
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        
+        <Label Text="Style Resources" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" />
+        <Button Text="Estilo Padrão" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Estilo Dinâmico" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Estilo Event Triggres" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Estilo Global" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 
+        <Label Text="Passar Parametro" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" />
+        <Button Text="Home" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Mensaging Center" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+        <Label Text="ListView" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue"/>
+        <Button Text="Simples" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Classe complexa" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Produto" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        
+    </StackLayout>
 </ContentPage>
