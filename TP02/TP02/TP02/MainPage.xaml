@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TP02" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TP02.MainPage">
-    <StackLayout>
-        
-        <Label Text="Style Resources" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" />
-        <Button Text="Estilo Padrão" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Estilo Dinâmico" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Estilo Event Triggres" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Estilo Global" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-
-        <Label Text="Passar Parametro" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" />
-        <Button Text="Home" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Mensaging Center" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-
-        <Label Text="ListView" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue"/>
-        <Button Text="Simples" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Classe complexa" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button Text="Produto" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    <StackLayout Spacing="1">
+        <Label Text="Style Resources" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" FontSize="10" />
+        <Button Text="Estilo Padrão" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Estilo Dinâmico" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Estilo Event Triggres" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Estilo Global" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+       
+        <Label Text="Passar Parametro" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" FontSize="10" />
+        <Button Text="Home" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Mensaging FillAndExpand" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+       
+        <Label Text="ListView" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" FontSize="10" />
+        <Button Text="Simples" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Classe complexa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Produto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
         
     </StackLayout>
 </ContentPage>
