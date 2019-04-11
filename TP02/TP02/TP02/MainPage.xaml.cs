@@ -13,5 +13,15 @@ namespace TP02
         {
             InitializeComponent();
         }
+
+        private async void EstiloPadrao(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EstiloVisualSimples());           
+        }
+
+        private async void EstiloDinamico(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EstiloDinamico());
+        }
     }
 }
