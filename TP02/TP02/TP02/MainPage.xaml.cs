@@ -23,5 +23,15 @@ namespace TP02
         {
             await Navigation.PushAsync(new EstiloDinamico());
         }
+
+        private async void EstiloEventTrigger(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EstiloEventTrigger());
+        }
+
+        private async void EstiloListView(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EstiloListView());
+        }
     }
 }

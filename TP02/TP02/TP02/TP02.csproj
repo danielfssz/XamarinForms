@@ -17,7 +17,10 @@
     <EmbeddedResource Update="EstiloDinamico.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="EstiloEventTriggers.xaml">
+    <EmbeddedResource Update="EstiloEventTrigger.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EstiloListView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="EstiloVisualSimples.xaml">

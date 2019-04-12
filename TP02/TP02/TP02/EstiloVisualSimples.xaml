@@ -2,11 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TP02.EstiloVisualSimples">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Label Text="Estilo Visual - Simples" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+        <StackLayout BackgroundColor="Orange">        
+            <Label 
+                x:Name="LabelDescribe"
+                BackgroundColor="BlueViolet"
+                TextColor="WhiteSmoke"
+                Text="Valor:"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label 
+                x:Name="LabelValue"
+                BackgroundColor="BlueViolet"
+                TextColor="WhiteSmoke"
+                Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+                <Slider x:Name="slider" HorizontalOptions="FillAndExpand" ValueChanged="Slider_ValueChanged" IsEnabled="{Binding IsEnabled}"/>
+            <Button Text="Voltar" Clicked="VoltarMenu" BackgroundColor="BlueViolet"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TP02
+namespace TP02.ViewModel
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EstiloEventTriggers : ContentPage
+	public partial class RelogioView : ContentPage
 	{
-		public EstiloEventTriggers ()
+		public RelogioView ()
 		{
 			InitializeComponent ();
 		}
