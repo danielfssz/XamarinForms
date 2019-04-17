@@ -1,26 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel;
 using TP02.Model;
 
 namespace TP02.ViewModel
 {
-    class RelogioViewModel
+    class RelogioViewModel : INotifyPropertyChanged
     {
-        public DateTime Tempo { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        public RelogioViewModel(Relogio relogio)
+        private string _tempo;
+
+        public string Tempo
         {
-            this.Tempo = relogio.Tempo;
+            get { return _tempo; }
+            set
+            {
+                _tempo = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Tempo)));
+            }
         }
 
-        public static Relogio GetTempo()
+        public static DateTime GetTempoUTC()
         {
-            var relogio = new Relogio()
-            {
-                Tempo = new DateTime()
-            };
-            return relogio;
+            DateTime dateTime = DateTime.UtcNow;
+            TimeZoneInfo horaBrasilia = TimeZoneInfo.FindSystemTimeZoneById("America/Buenos_Aires");
+            return TimeZoneInfo.ConvertTimeFromUtc(dateTime, horaBrasilia);
         }
     }
 }

@@ -6,6 +6,6 @@ namespace TP02.Model
 {
     class Relogio
     {
-        public DateTime Tempo { get; set; }
+        public string Tempo { get; set; }
     }
 }

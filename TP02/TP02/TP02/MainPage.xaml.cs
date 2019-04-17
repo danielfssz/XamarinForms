@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TP02.ViewModel;
 using Xamarin.Forms;
 
 namespace TP02
@@ -21,7 +22,8 @@ namespace TP02
 
         private async void EstiloDinamico(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EstiloDinamico());
+            //await Navigation.PushAsync(new EstiloDinamico());
+            await Navigation.PushAsync(new RelogioView());
         }
 
         private async void EstiloEventTrigger(object sender, EventArgs e)
