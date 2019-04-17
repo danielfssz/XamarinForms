@@ -3,9 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TP02.ViewModel.RelogioView">
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Horario" Font="20"/>
-            <Label Text="{Binding Tempo}"/>
+        <StackLayout Padding="5" Spacing="1">
+            <Entry x:Name="entryPesquisa" Placeholder="Pesquisa" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btnEnviar" Text="ALTERAR ESTILO" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Horário" Font="20" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Tempo}"  HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
