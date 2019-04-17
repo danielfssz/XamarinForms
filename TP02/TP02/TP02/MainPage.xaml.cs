@@ -33,5 +33,10 @@ namespace TP02
         {
             await Navigation.PushAsync(new EstiloListView());
         }
+
+        private async void clicked_Produto(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FormularioProduto());
+        }
     }
 }
