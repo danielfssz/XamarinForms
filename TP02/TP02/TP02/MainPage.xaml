@@ -17,7 +17,7 @@
         <Label Text="ListView" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" FontSize="10" />
         <Button Text="Simples" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
         <Button Text="Classe complexa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
-        <Button Text="Produto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Produto" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" Clicked="clicked_Produto" />
         
     </StackLayout>
 </ContentPage>
