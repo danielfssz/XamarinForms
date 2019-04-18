@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TP02.FormularioContato">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Formulário de Contatos" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Label VerticalOptions="Center" Text="Nome:" />
+                <Entry x:Name="Nome" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label VerticalOptions="Center" Text="Idade:" />
+                <Entry x:Name="Idade" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label VerticalOptions="Center" Text="Profissao:" />
+                <Entry x:Name="Profissao" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label VerticalOptions="Center" Text="Pais:" />
+                <Entry x:Name="Pais" VerticalOptions="Center" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="submit" Text="Salvar" Clicked="SalvarContato" />
+                <Button x:Name="detalhe" Text="Detalhe" Clicked="DetalheContato" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

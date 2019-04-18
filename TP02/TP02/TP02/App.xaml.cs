@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,7 +8,7 @@ namespace TP02
 {
     public partial class App : Application
     {
-        public App()
+        public App()        
         {
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());            

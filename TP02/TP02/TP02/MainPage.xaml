@@ -11,7 +11,7 @@
         <Button Text="Estilo Global" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" Clicked="EstiloListView"/>
        
         <Label Text="Passar Parametro" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" FontSize="10" />
-        <Button Text="Home" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
+        <Button Text="Home" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" Clicked="FormContato"/>
         <Button Text="Mensaging FillAndExpand" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="16" FontSize="8" />
        
         <Label Text="ListView" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Blue" FontSize="10" />

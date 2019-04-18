@@ -9,7 +9,7 @@ using Xamarin.Forms;
 namespace TP02
 {
     public partial class MainPage : ContentPage
-    {
+    {   
         public MainPage()
         {
             InitializeComponent();
@@ -17,7 +17,7 @@ namespace TP02
 
         private async void EstiloPadrao(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EstiloVisualSimples());           
+            await Navigation.PushAsync(new EstiloVisualSimples());
         }
 
         private async void EstiloDinamico(object sender, EventArgs e)
@@ -39,6 +39,11 @@ namespace TP02
         private async void clicked_Produto(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FormularioProduto());
+        }
+
+        private async void FormContato(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListaContatosView());
         }
     }
 }

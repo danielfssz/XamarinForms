@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.ListaContatosView">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lv4" HasUnevenRows="true" 
+            ItemSelected="Handle_ItemSelected" 
+            ItemTapped="Handle_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5">                                
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding Nome}" TextColor="Black"/>
+                                    <Label Text="{Binding Profissao}" TextColor="Gray"/>
+                                </StackLayout>                                
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout>
+                <Button BackgroundColor="White" TextColor="Blue" Text="Add Contato" FontAttributes="Italic" Clicked="CriarContato"/>
+            </StackLayout>
+        </StackLayout>        
+    </ContentPage.Content>
+</ContentPage>
