@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.Android", "WeatherApp\WeatherApp.Android\WeatherApp.Android.csproj", "{E5BC22B8-B807-4E7D-A960-B09010340303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp\WeatherApp.csproj", "{DE5CD406-929B-42AA-BEFE-93092EFAB957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5BC22B8-B807-4E7D-A960-B09010340303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BC22B8-B807-4E7D-A960-B09010340303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BC22B8-B807-4E7D-A960-B09010340303}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E5BC22B8-B807-4E7D-A960-B09010340303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BC22B8-B807-4E7D-A960-B09010340303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BC22B8-B807-4E7D-A960-B09010340303}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DE5CD406-929B-42AA-BEFE-93092EFAB957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5CD406-929B-42AA-BEFE-93092EFAB957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5CD406-929B-42AA-BEFE-93092EFAB957}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE5CD406-929B-42AA-BEFE-93092EFAB957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5CD406-929B-42AA-BEFE-93092EFAB957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5CD406-929B-42AA-BEFE-93092EFAB957}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4BDFB70-37C8-4D41-AF28-70ADDE50D993}
+	EndGlobalSection
+EndGlobal
