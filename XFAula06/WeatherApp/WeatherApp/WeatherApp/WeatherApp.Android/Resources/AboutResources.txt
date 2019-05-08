@@ -11,13 +11,7 @@ Resources/
     drawable-hdpi/
         icon.png
 
-    drawable-ldpi/
-        icon.png
-
-    drawable-mdpi/
-        icon.png
-
-    layout/
+     layout/
         main.xml
 
     values/

@@ -1,4 +1,8 @@
-﻿namespace WeatherApp
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace WeatherApp
 {
     public class Weather
     {
@@ -9,16 +13,8 @@
         public string Visibility { get; set; }
         public string Sunrise { get; set; }
         public string Sunset { get; set; }
-        public Weather()
-        {
 
-            this.Title = " ";
-            this.Temperature = " ";
-            this.Wind = " ";
-            this.Humidity = " ";
-            this.Visibility = " ";
-            this.Sunrise = " ";
-            this.Sunset = " ";
-        }
+       
     }
 }
+
