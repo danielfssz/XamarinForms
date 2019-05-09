@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MonkeyHub.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,12 @@ namespace MonkeyHub
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
+        }
+
+        private async void SliderPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SliderBindingPage());
         }
     }
 }

@@ -5,10 +5,10 @@
              x:Class="MonkeyHub.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="{ Binding Descricao }" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <Button Clicked="SliderPage" Text="Slider"/>
     </StackLayout>
 
 </ContentPage>
