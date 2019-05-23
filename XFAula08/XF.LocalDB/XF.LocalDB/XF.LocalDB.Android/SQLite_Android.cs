@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.Forms;
 using XF.LocalDB.Android;
+using XF.LocalDB.Data;
 
 [assembly:Dependency(typeof(SQLite_Android))]
 namespace XF.LocalDB.Android
