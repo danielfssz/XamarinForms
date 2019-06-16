@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,22 +28,38 @@ namespace TPFinal.View.Livro
             var livro = App.LivroModel.GetLivro(ISBN);
             txtNome.Text = livro.Nome;
             txtNomeAutor.Text = livro.NomeAutor;
-            txtEmailAutor.Text = livro.EmailAutor;            
+            txtEmailAutor.Text = livro.EmailAutor;
             isbn = livro.ISBN;
+            //latitude = livro.Latitude;
+            //longitude = livro.Longitude;
         }
-        public void OnSalvar(object sender, EventArgs args)
+        public async void OnSalvar(object sender, EventArgs args)
         {
-            TPFinal.Model.Livro livro = new
-            TPFinal.Model.Livro
+            try
             {
-                Nome = txtNome.Text,
-                NomeAutor = txtNomeAutor.Text,
-                EmailAutor = txtEmailAutor.Text,                
-                ISBN = isbn
-            };
-            Limpar();
-            App.LivroModel.SalvarLivro(livro);
-            Navigation.PopAsync();
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
+
+                var p = await locator.GetPositionAsync(TimeSpan.FromSeconds(20));
+
+                TPFinal.Model.Livro livro = new
+                TPFinal.Model.Livro
+                {
+                    Nome = txtNome.Text,
+                    NomeAutor = txtNomeAutor.Text,
+                    EmailAutor = txtEmailAutor.Text,
+                    ISBN = isbn,
+                    Latitude = p.Latitude,
+                    Longitude = p.Longitude
+                };
+                Limpar();
+                App.LivroModel.SalvarLivro(livro);
+                Navigation.PopAsync();
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Erro : ", ex.Message, "OK");
+            }
         }
         public void OnCancelar(object sender, EventArgs args)
         {
@@ -50,7 +68,9 @@ namespace TPFinal.View.Livro
         }
         private void Limpar()
         {
-            txtNome.Text = txtEmailAutor.Text = txtNomeAutor.Text = string.Empty;            
+            txtNome.Text = txtEmailAutor.Text = txtNomeAutor.Text = string.Empty;         
         }
+
+
     }
 }

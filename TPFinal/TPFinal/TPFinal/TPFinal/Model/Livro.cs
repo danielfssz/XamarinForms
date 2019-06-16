@@ -21,6 +21,8 @@ namespace TPFinal.Model
         public string Nome { get; set; }
         public string NomeAutor { get; set; }
         public string EmailAutor { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         #endregion
 
         #region Aluno Local Database
