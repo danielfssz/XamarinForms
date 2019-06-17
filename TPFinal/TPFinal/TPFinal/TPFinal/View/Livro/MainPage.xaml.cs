@@ -35,20 +35,10 @@ namespace TPFinal.View.Livro
         {
             var selecionado = args.Item as TPFinal.Model.Livro;
 
-            try
-            {
-                var location = new Location(selecionado.Latitude, selecionado.Longitude);
-                var options = new MapLaunchOptions
-                {
-                    Name = "Localização do Cadastro"
-                };
-                await Map.OpenAsync(location, options);
-            }
-            catch (Exception ex)
-            {
-                // Não foi possivel acessar o mapa
-                await DisplayAlert("Erro : ", ex.Message, "Ok");
-            }
+            var detalheLivro = new DetailLivro(selecionado);
+            detalheLivro.BindingContext = selecionado;            
+            Navigation.PushAsync(detalheLivro);
+            
         }
     }
 }

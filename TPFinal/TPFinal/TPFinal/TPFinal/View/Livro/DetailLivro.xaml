@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TPFinal.View.Livro.DetailLivro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                x:Name="txtISBN"
+                Text="{Binding ISBN, StringFormat='ISBN: {0}'}" 
+                Font="12"
+                HorizontalOptions="CenterAndExpand" />
+            <Label 
+                Text="{Binding Nome, StringFormat='Nome: {0}'}" 
+                Font="12"
+                HorizontalOptions="CenterAndExpand" />
+            <Label 
+                Text="{Binding NomeAutor, StringFormat='Autor: {0}'}" 
+                Font="12"
+                HorizontalOptions="CenterAndExpand" />
+            <Label 
+                Text="{Binding EmailAutor, StringFormat='Email Autor: {0}'}" 
+                Font="12"
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout
+                VerticalOptions="End"
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Horizontal">
+                    <Button Text="Localização" Clicked="GoToLocation"/>
+                <Button Text="Editar" Clicked="GoToEdit"/>
+                <Button Text="Deletar" Clicked="GoToDelete"/>
+            </StackLayout>
+        </StackLayout>        
+    </ContentPage.Content>
+</ContentPage>

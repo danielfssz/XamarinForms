@@ -54,7 +54,7 @@ namespace TPFinal.View.Livro
                 };
                 Limpar();
                 App.LivroModel.SalvarLivro(livro);
-                Navigation.PopAsync();
+                Navigation.PopToRootAsync();
             }
             catch (Exception ex)
             {
