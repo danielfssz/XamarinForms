@@ -25,6 +25,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
+            <StackLayout Padding="5,0,5,0">
+                <Button Text="Créditos" Clicked="OnCreditClicked"/>
+            </StackLayout>
+        </StackLayout>        
     </ContentPage.Content>
 </ContentPage>

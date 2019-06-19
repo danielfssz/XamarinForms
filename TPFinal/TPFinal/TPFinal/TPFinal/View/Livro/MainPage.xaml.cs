@@ -40,5 +40,10 @@ namespace TPFinal.View.Livro
             Navigation.PushAsync(detalheLivro);
             
         }
+
+        private async void OnCreditClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Créditos", "Desenvolvido por Daniel Souza e Nilson Alves", "Fechar");
+        }
     }
 }
